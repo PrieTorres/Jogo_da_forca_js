@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#palavra_escrita{
+    margin-top: 45%;
+    font-size: 40px;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+#jogo{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+#caixa-imagem{
+    display: inline-block;
+    max-width: 49%;
+    float: left;
+}
+#pergunta-box{
+    display: inline-block;
+    max-width: 49%;
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+}
+#pergunta-box button, #pergunta-box input{
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#pergunta-box button{
+    background-color: rgb(59, 193, 255);
+    color: blue;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 6px double rgb(0, 0, 94);
+}
+#pergunta-box input{
+    background-color: rgb(59, 193, 255);
+    border: 6px double rgb(0, 0, 94);
+    padding: 3px;
+    min-width: 30%;
+}
+#pergunta-box input::placeholder{
+    color: rgb(0, 0, 94);
+}
+#baixo input, #baixo button{
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+    color: #eee;
+    border: 3px solid rgb(139, 139, 139);
+}
+#baixo input::placeholder{
+    color: #eee;
+    padding: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#baixo{
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}

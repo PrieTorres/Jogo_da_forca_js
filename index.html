@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Jogo da Forca</h1>
+
+    <div id="jogo">
+        <div class="tela-jogo" id="caixa-imagem">
+            <!--imagem_boneco-->
+            <img src="imgs/imagem_forca_vazia.png">
+        </div>
+
+        <div class="tela-jogo" id="pergunta-box">
+            <div id="palavra_escrita">---</div><br>
+            <input type="text" name="letra" id="letra" placeholder="digite uma letra" maxlength="1" minlength="1"><br>
+            <button onclick="acharLetra()">✔️</button><br>
+            <button onclick="reset()">sortear novamente</button>
+        </div>
+
+        <div style="clear: both;">.</div>
+    </div>
+    
+    <div style="width: 100%; margin-top: 20px;">
+        <div id="baixo">
+
+            <input type="text" name="nova-palara" id="nova-palavra" placeholder="adicione uma palavra!" style="clear: both;">
+            <button onclick="addPalavra()">✔️</button>
+
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
